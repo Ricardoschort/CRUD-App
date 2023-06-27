@@ -26,19 +26,30 @@ body {
 h2 {
   font-size: 3.2em;
   line-height: 1.1;
+  margin-bottom: 5px;
 }
 
-button {
+button{
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 0.4em 0.5em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #be00ee;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-left: 7px;
 }
+.button{
+  color: #f6f6f6;
+  background-color: #1bac08;
+  padding: 0.4em 0.5em;
+}
+.clear{
+  background-color: rgb(187, 11, 11);
+}
+
 button:hover {
   border-color: #646cff;
 }
@@ -46,6 +57,37 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+table{
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+th,td{
+  text-align: left;
+  padding: 0.5rem;
+  border-bottom: thin solid #2e2e2e;
+}
+
+tr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input{
+  text-decoration: none;
+  color: #242424;
+  padding: 7px;
+  border: none;
+  border-radius: 7px;
+  margin-right: 6px;
+  background-color: #f6f6f6;
+}
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
